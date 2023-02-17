@@ -1,0 +1,30 @@
+.contact__container {
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+.contact__container a {
+  background: var(--color-primary);
+  width: 5rem;
+  aspect-ratio: 1/1;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-size: 2rem;
+  border: 2px solid transparent;
+  border-radius: var(--border-radius-1);
+}
+.contact__container a:hover {
+  background: transparent;
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+  transform: translateY(-0.3rem);
+  box-shadow: 0 0.5rem 0.9rem var(--color-primary);
+}
+/* media queries phones */
+@media screen and (max-width:600px) {   
+    .contact__container{
+        gap: 1.5rem;
+    }
+}
